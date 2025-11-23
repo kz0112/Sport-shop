@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTX – My Profile</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+    <div class="header-inner container">
+        <a href="index.html" class="logo">SPORTX</a>
+
+        <nav class="main-nav">
+            <div class="nav-item" data-menu="men">MEN</div>
+            <div class="nav-item" data-menu="women">WOMEN</div>
+            <div class="nav-item" data-menu="kids">KIDS</div>
+            <div class="nav-item" data-menu="sports">SPORTS</div>
+            <div class="nav-item" data-menu="collections">COLLECTIONS</div>
+        </nav>
+
+        <div class="nav-icons">
+            <div id="searchBtn" class="icon"><i class="fas fa-search"></i></div>
+            <a href="wishlist.html" class="icon"><i class="far fa-heart"></i></a>
+            <a href="profile.html" class="icon"><i class="far fa-user"></i></a>
+
+            <div class="icon cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="megaMenu" class="mega-menu"></div>
+</header>
+
+
+
+<!-- ============================================================
+     PROFILE DASHBOARD
+============================================================ -->
+<section class="profile container">
+
+    <h1 class="prof-title">My Account</h1>
+    <p class="prof-sub">Manage your information, orders and settings.</p>
+
+
+    <!-- TWO COLUMN LAYOUT -->
+    <div class="profile-layout">
+
+        <!-- LEFT SIDEBAR MENU -->
+        <aside class="profile-menu">
+            <div class="profile-avatar">
+                <div class="avatar-circle">JD</div>
+                <div class="avatar-name">John Doe</div>
+                <div class="avatar-email">you@example.com</div>
+            </div>
+
+            <ul class="profile-links">
+                <li class="active" data-tab="info">
+                    <i class="far fa-user"></i> Personal Information
+                </li>
+                <li data-tab="orders">
+                    <i class="fas fa-box"></i> My Orders
+                </li>
+                <li data-tab="address">
+                    <i class="fas fa-map-marker-alt"></i> Address Book
+                </li>
+                <li data-tab="wishlist">
+                    <i class="far fa-heart"></i> Wishlist
+                </li>
+                <li data-tab="security">
+                    <i class="fas fa-lock"></i> Security
+                </li>
+                <li class="logout">
+                    <i class="fas fa-sign-out-alt"></i> Log out
+                </li>
+            </ul>
+        </aside>
+
+
+
+        <!-- RIGHT CONTENT PANELS -->
+        <div class="profile-content">
+
+
+            <!-- ===========================
+                 TAB 1 — PERSONAL INFO
+            ============================ -->
+            <div class="tab-panel active" id="info">
+
+                <h2>Personal Information</h2>
+
+                <div class="profile-form">
+
+                    <div class="input-row-2">
+                        <div class="field">
+                            <label>First Name</label>
+                            <input type="text" value="John">
+                        </div>
+
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input type="text" value="Doe">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" value="you@example.com">
+                    </div>
+
+                    <div class="field">
+                        <label>Phone</label>
+                        <input type="tel" value="+7 777 000 0000">
+                    </div>
+
+                    <button class="btn save-btn">Save Changes</button>
+
+                </div>
+            </div>
+
+
+
+            <!-- ===========================
+                 TAB 2 — ORDERS
+            ============================ -->
+            <div class="tab-panel" id="orders">
+
+                <h2>My Orders</h2>
+
+                <div class="order-list">
+
+                    <div class="order-item">
+                        <div class="order-top">
+                            <span class="order-number">Order #30511</span>
+                            <span class="order-status delivered">Delivered</span>
+                        </div>
+
+                        <div class="order-info">
+                            <p>Date: 2025-01-14</p>
+                            <p>Total: 69,900 ₸</p>
+                        </div>
+
+                        <a href="#" class="order-view">View details</a>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="order-top">
+                            <span class="order-number">Order #30288</span>
+                            <span class="order-status shipped">Shipped</span>
+                        </div>
+
+                        <div class="order-info">
+                            <p>Date: 2024-12-25</p>
+                            <p>Total: 49,900 ₸</p>
+                        </div>
+
+                        <a href="#" class="order-view">View details</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===========================
+                 TAB 3 — ADDRESS BOOK
+            ============================ -->
+            <div class="tab-panel" id="address">
+
+                <h2>Address Book</h2>
+
+                <div class="address-card">
+                    <h3>Primary Address</h3>
+                    <p>John Doe</p>
+                    <p>Almaty city</p>
+                    <p>Microdistrict 12, Building 44</p>
+                    <p>050000</p>
+                    <p>Phone: +7 777 000 0000</p>
+
+                    <button class="btn small-btn">Edit</button>
+                </div>
+
+                <button class="btn add-address-btn">+ Add new address</button>
+
+            </div>
+
+
+
+            <!-- ===========================
+                 TAB 4 — WISHLIST
+            ============================ -->
+            <div class="tab-panel" id="wishlist">
+
+                <h2>Wishlist</h2>
+
+                <div class="wishlist-grid">
+
+                    <div class="wishlist-card">
+                        <img src="assets/img/products/p5.jpg">
+                        <h4>MAX Bounce Sneakers</h4>
+                        <p>63,900 ₸</p>
+                        <button class="btn small-btn">Add to cart</button>
+                    </div>
+
+                    <div class="wishlist-card">
+                        <img src="assets/img/products/p2.jpg">
+                        <h4>UrbanFlex Hoodie</h4>
+                        <p>35,900 ₸</p>
+                        <button class="btn small-btn">Add to cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===========================
+                 TAB 5 — SECURITY
+            ============================ -->
+            <div class="tab-panel" id="security">
+
+                <h2>Security Settings</h2>
+
+                <div class="profile-form">
+
+                    <div class="field">
+                        <label>Current Password</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+
+                    <div class="input-row-2">
+                        <div class="field">
+                            <label>New Password</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+
+                        <div class="field">
+                            <label>Repeat Password</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <button class="btn save-btn">Update Password</button>
+
+                </div>
+
+            </div>
+
+        </div> <!-- /profile-content -->
+
+    </div> <!-- /profile-layout -->
+
+</section>
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+
+    <div class="footer-top container">
+
+        <div class="footer-col">
+            <h4>SPORTX</h4>
+            <p>Premium sportswear, footwear and performance training gear.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Sports</a>
+            <a href="products.html">Collections</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Account</h4>
+            <a href="profile.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPORTX. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+
+<!-- ============================================================
+     CART DRAWER (GLOBAL)
+============================================================ -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <div class="cart-close"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="cart-list">
+        <!-- JS mini cart items -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-box">
+            <span>Total:</span>
+            <strong class="cart-total">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+            <input id="searchInputOverlay" type="text" placeholder="Search products...">
+            <div id="searchClose" class="search-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="searchSuggest" class="search-suggest">
+            <!-- JS suggestions -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/slider.js"></script>
+
+<script>
+    // ===========================
+    // PROFILE TABS LOGIC
+    // ===========================
+    const profileLinks = document.querySelectorAll(".profile-links li[data-tab]");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    profileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+
+            // left menu active state
+            profileLinks.forEach(l => l.classList.remove("active"));
+            link.classList.add("active");
+
+            const tabId = link.dataset.tab;
+
+            // right panels
+            tabPanels.forEach(panel => {
+                panel.classList.remove("active");
+                if (panel.id === tabId) {
+                    panel.classList.add("active");
+                }
+            });
+        });
+    });
+
+    // OPTIONAL: fake logout
+    document.querySelector(".profile-links .logout")?.addEventListener("click", () => {
+        alert("You have been logged out (demo).");
+        window.location.href = "login.html";
+    });
+</script>
+
+</body>
+</html>

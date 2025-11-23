@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTX – Cart</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+    <div class="header-inner container">
+        <a href="index.html" class="logo">SPORTX</a>
+
+        <nav class="main-nav">
+            <div class="nav-item" data-menu="men">MEN</div>
+            <div class="nav-item" data-menu="women">WOMEN</div>
+            <div class="nav-item" data-menu="kids">KIDS</div>
+            <div class="nav-item" data-menu="sports">SPORTS</div>
+            <div class="nav-item" data-menu="collections">COLLECTIONS</div>
+        </nav>
+
+        <div class="nav-icons">
+            <div id="searchBtn" class="icon"><i class="fas fa-search"></i></div>
+            <a href="wishlist.html" class="icon"><i class="far fa-heart"></i></a>
+            <a href="profile.html" class="icon"><i class="far fa-user"></i></a>
+
+            <div class="icon cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="megaMenu" class="mega-menu"></div>
+</header>
+
+
+
+
+<!-- ============================================================
+     PAGE TITLE
+============================================================ -->
+<section class="page-title container">
+    <h1>Your Shopping Cart</h1>
+    <p>Review items before checkout.</p>
+</section>
+
+
+
+
+<!-- ============================================================
+     CART PAGE MAIN
+============================================================ -->
+<div class="cart-wrapper container">
+
+    <!-- LEFT: ITEMS -->
+    <div class="cart-items-box">
+
+        <!-- Example item (JS will replace) -->
+        <div class="cart-item-row">
+
+            <img src="assets/img/products/p1.jpg" class="cart-img">
+
+            <div class="cart-item-info">
+                <h3>AirFlow Running Shoes</h3>
+                <p>Size: 40</p>
+                <p>Color: Black</p>
+
+                <div class="qty-box">
+                    <button class="qty-btn minus">-</button>
+                    <span>1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+            </div>
+
+            <div class="cart-price">49,900 ₸</div>
+
+            <div class="cart-remove">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </div>
+
+        <!-- CART ITEMS RENDERED HERE BY JS -->
+        <div id="cartPageList"></div>
+
+        <a href="products.html" class="back-shopping">
+            <i class="fas fa-arrow-left"></i> Continue Shopping
+        </a>
+
+    </div>
+
+
+
+
+    <!-- RIGHT: SUMMARY -->
+    <div class="cart-summary-box">
+
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="summarySubtotal">0 ₸</strong>
+        </div>
+
+        <div class="summary-row">
+            <span>Delivery</span>
+            <strong>Free</strong>
+        </div>
+
+        <div class="summary-row total">
+            <span>Total</span>
+            <strong id="summaryTotal">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+
+    </div>
+
+</div>
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+
+    <div class="footer-top container">
+
+        <div class="footer-col">
+            <h4>SPORTX</h4>
+            <p>Premium sportswear, footwear and performance training gear.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Sports</a>
+            <a href="products.html">Collections</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Account</h4>
+            <a href="profile.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPORTX. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+
+<!-- ============================================================
+     CART DRAWER (Global, same as other pages)
+============================================================ -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <div class="cart-close"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="cart-list">
+        <!-- JS will render mini-cart items -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-box">
+            <span>Total:</span>
+            <strong class="cart-total">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+            <input id="searchInputOverlay" type="text" placeholder="Search products...">
+            <div id="searchClose" class="search-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="searchSuggest" class="search-suggest">
+            <!-- JS suggestions -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/slider.js"></script>
+
+</body>
+</html>

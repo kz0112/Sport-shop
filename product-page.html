@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTX – Product</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+    <div class="header-inner container">
+        <a href="index.html" class="logo">SPORTX</a>
+
+        <nav class="main-nav">
+            <div class="nav-item" data-menu="men">MEN</div>
+            <div class="nav-item" data-menu="women">WOMEN</div>
+            <div class="nav-item" data-menu="kids">KIDS</div>
+            <div class="nav-item" data-menu="sports">SPORTS</div>
+            <div class="nav-item" data-menu="collections">COLLECTIONS</div>
+        </nav>
+
+        <div class="nav-icons">
+            <div id="searchBtn" class="icon"><i class="fas fa-search"></i></div>
+            <a href="wishlist.html" class="icon"><i class="far fa-heart"></i></a>
+            <a href="profile.html" class="icon"><i class="far fa-user"></i></a>
+
+            <div class="icon cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="megaMenu" class="mega-menu"></div>
+</header>
+
+
+
+
+<!-- ============================================================
+     PRODUCT PAGE MAIN
+============================================================ -->
+<section class="product-page container">
+
+    <!-- LEFT: GALLERY -->
+    <div class="gallery">
+
+        <div class="gallery-main">
+            <img id="mainImage" src="assets/img/products/p1.jpg" alt="">
+        </div>
+
+        <div class="gallery-thumbs">
+
+            <div class="thumb active">
+                <img src="assets/img/products/p1.jpg" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="assets/img/products/p1b.jpg" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="assets/img/products/p1c.jpg" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="assets/img/products/p1d.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- RIGHT: INFO -->
+    <div class="product-info">
+
+        <h1 class="product-title">AirFlow Running Shoes</h1>
+
+        <div class="product-price" data-price="49900">49,900 ₸</div>
+
+        <p class="product-desc">
+            Designed for maximum airflow and lightweight comfort with every step.
+            Engineered with the latest SPORTX running technology for superior performance.
+        </p>
+
+
+
+        <!-- SIZE SELECTOR -->
+        <div class="section-block">
+            <h3>Select Size</h3>
+
+            <div class="size-list">
+                <div class="size-option">38</div>
+                <div class="size-option">39</div>
+                <div class="size-option active">40</div>
+                <div class="size-option">41</div>
+                <div class="size-option">42</div>
+            </div>
+        </div>
+
+
+
+        <!-- COLOR SELECTOR -->
+        <div class="section-block">
+            <h3>Color</h3>
+
+            <div class="color-list">
+                <div class="color-dot active" style="background:black" data-color="Black"></div>
+                <div class="color-dot" style="background:#d32f2f" data-color="Red"></div>
+                <div class="color-dot" style="background:#1e88e5" data-color="Blue"></div>
+            </div>
+        </div>
+
+
+
+        <!-- QTY -->
+        <div class="section-block">
+            <h3>Quantity</h3>
+            <div class="qty-select">
+                <button class="qty-btn minus">-</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn plus">+</button>
+            </div>
+        </div>
+
+
+
+        <!-- ADD TO CART BUTTON -->
+        <button id="addToCartBtn" class="btn add-cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+
+        <!-- PRODUCT DETAILS -->
+        <div class="product-details">
+
+            <h3>Product Details</h3>
+
+            <ul>
+                <li>Ultra-breathable mesh upper</li>
+                <li>Advanced impact cushioning</li>
+                <li>Lightweight rubber outsole</li>
+                <li>Next-gen SPORTX running technology</li>
+                <li>Improved traction pattern for all surfaces</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- ============================================================
+     RECOMMENDED PRODUCTS
+============================================================ -->
+<section class="recommended container">
+
+    <h2 class="section-title">You May Also Like</h2>
+
+    <div class="products-grid">
+
+        <a href="product-page.html" class="product-card">
+            <img src="assets/img/products/p5.jpg">
+            <div class="prod-info">
+                <div class="prod-title">MAX Bounce Sneakers</div>
+                <div class="prod-price">63,900 ₸</div>
+            </div>
+        </a>
+
+        <a href="product-page.html" class="product-card">
+            <img src="assets/img/products/p4.jpg">
+            <div class="prod-info">
+                <div class="prod-title">Sport Cargo Pants</div>
+                <div class="prod-price">28,900 ₸</div>
+            </div>
+        </a>
+
+        <a href="product-page.html" class="product-card">
+            <img src="assets/img/products/p3.jpg">
+            <div class="prod-info">
+                <div class="prod-title">PowerFit Training Shirt</div>
+                <div class="prod-price">22,900 ₸</div>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+
+    <div class="footer-top container">
+
+        <div class="footer-col">
+            <h4>SPORTX</h4>
+            <p>Premium sportswear, footwear and performance training gear.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Sports</a>
+            <a href="products.html">Collections</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Account</h4>
+            <a href="profile.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPORTX. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+
+
+<!-- ============================================================
+     CART DRAWER
+============================================================ -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <div class="cart-close"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="cart-list">
+        <!-- JS fills items -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-box">
+            <span>Total:</span>
+            <strong class="cart-total">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+            <input id="searchInputOverlay" type="text" placeholder="Search products...">
+            <div id="searchClose" class="search-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="searchSuggest" class="search-suggest">
+            <!-- JS suggestions -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/filters.js"></script>
+
+</body>
+</html>

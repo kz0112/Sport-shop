@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTX – Products</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-inner container">
+        <a href="index.html" class="logo">SPORTX</a>
+
+        <nav class="main-nav">
+            <div class="nav-item" data-menu="men">MEN</div>
+            <div class="nav-item" data-menu="women">WOMEN</div>
+            <div class="nav-item" data-menu="kids">KIDS</div>
+            <div class="nav-item" data-menu="sports">SPORTS</div>
+            <div class="nav-item" data-menu="collections">COLLECTIONS</div>
+        </nav>
+
+        <div class="nav-icons">
+            <div id="searchBtn" class="icon"><i class="fas fa-search"></i></div>
+            <a href="wishlist.html" class="icon"><i class="far fa-heart"></i></a>
+            <a href="profile.html" class="icon"><i class="far fa-user"></i></a>
+
+            <div class="icon cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- MEGA MENU -->
+    <div id="megaMenu" class="mega-menu"></div>
+</header>
+
+
+
+
+<!-- ============================================================
+     PAGE HEADER / TITLE
+============================================================ -->
+<section class="page-title container">
+    <h1>All Products</h1>
+    <p>Explore our full collection of premium sportswear, footwear and training gear.</p>
+</section>
+
+
+
+
+<!-- ============================================================
+     MAIN PRODUCTS WRAPPER
+============================================================ -->
+<div class="products-page container">
+
+    <!-- SIDEBAR FILTERS -->
+    <aside class="filter-sidebar">
+
+        <div class="filter-box">
+            <h3>Categories</h3>
+
+            <label class="filter-item">
+                <input type="checkbox" class="flt-cat" value="shoes">
+                <span>Shoes</span>
+            </label>
+
+            <label class="filter-item">
+                <input type="checkbox" class="flt-cat" value="clothes">
+                <span>Clothes</span>
+            </label>
+
+            <label class="filter-item">
+                <input type="checkbox" class="flt-cat" value="accessories">
+                <span>Accessories</span>
+            </label>
+        </div>
+
+        <div class="filter-box">
+            <h3>Price</h3>
+
+            <div class="price-range">
+                <input type="range" min="5000" max="100000" value="100000" id="priceRange">
+                <div class="price-value">
+                    Max: <span id="priceValue">100000 ₸</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <h3>Sort by</h3>
+            <select id="sortSelect">
+                <option value="new">Newest</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+        </div>
+
+    </aside>
+
+
+
+
+    <!-- PRODUCTS GRID -->
+    <main class="products-grid" id="productGrid">
+
+        <!-- ITEM 1 -->
+        <a href="product-page.html" class="product-card" data-id="1" data-price="49900" data-gender="men">
+            <div class="tag">NEW</div>
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p1.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">AirFlow Running Shoes</div>
+                <div class="prod-price">49,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 2 -->
+        <a href="product-page.html" class="product-card" data-id="2" data-price="35900" data-gender="men">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p2.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">UrbanFlex Hoodie</div>
+                <div class="prod-price">35,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 3 -->
+        <a href="product-page.html" class="product-card" data-id="3" data-price="22900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p3.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">PowerFit T-shirt</div>
+                <div class="prod-price">22,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 4 -->
+        <a href="product-page.html" class="product-card" data-id="4" data-price="28900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p4.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Sport Cargo Pants</div>
+                <div class="prod-price">28,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 5 -->
+        <a href="product-page.html" class="product-card" data-id="5" data-price="63900" data-gender="men">
+            <div class="tag">NEW</div>
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p5.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">MAX Bounce Sneakers</div>
+                <div class="prod-price">63,900 ₸</div>
+            </div>
+        </a>
+        <!-- ITEM 6 -->
+        <a href="product-page.html" class="product-card" data-id="6" data-price="45900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p6.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">FlexRun Sports Bra</div>
+                <div class="prod-price">45,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 7 -->
+        <a href="product-page.html" class="product-card" data-id="7" data-price="19900" data-gender="kids">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p7.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Kids Training Shirt</div>
+                <div class="prod-price">19,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 8 -->
+        <a href="product-page.html" class="product-card" data-id="8" data-price="15500" data-gender="kids">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p8.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Kids Shorts</div>
+                <div class="prod-price">15,500 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 9 -->
+        <a href="product-page.html" class="product-card" data-id="9" data-price="32900" data-gender="men">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p9.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Performance Shorts</div>
+                <div class="prod-price">32,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 10 -->
+        <a href="product-page.html" class="product-card" data-id="10" data-price="55900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p10.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">UltraLight Running Shoes</div>
+                <div class="prod-price">55,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 11 -->
+        <a href="product-page.html" class="product-card" data-id="11" data-price="38900" data-gender="men">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p11.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Sport Hoodie Classic</div>
+                <div class="prod-price">38,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 12 -->
+        <a href="product-page.html" class="product-card" data-id="12" data-price="27900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p12.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Yoga Fit Leggings</div>
+                <div class="prod-price">27,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 13 -->
+        <a href="product-page.html" class="product-card" data-id="13" data-price="31900" data-gender="kids">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p13.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Kids Sport Set</div>
+                <div class="prod-price">31,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 14 -->
+        <a href="product-page.html" class="product-card" data-id="14" data-price="44900" data-gender="men">
+            <div class="tag">HOT</div>
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p14.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">PowerLift Sneakers</div>
+                <div class="prod-price">44,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 15 -->
+        <a href="product-page.html" class="product-card" data-id="15" data-price="23900" data-gender="women">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p15.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">Sport Crop Top</div>
+                <div class="prod-price">23,900 ₸</div>
+            </div>
+        </a>
+
+        <!-- ITEM 16 -->
+        <a href="product-page.html" class="product-card" data-id="16" data-price="49900" data-gender="men">
+            <div class="wishlist">♡</div>
+            <img src="assets/img/products/p16.jpg" alt="">
+            <div class="prod-info">
+                <div class="prod-title">ProRunner Jacket</div>
+                <div class="prod-price">49,900 ₸</div>
+            </div>
+        </a>
+
+    </main>
+</div>
+
+
+
+
+<!-- ============================================================
+     PAGINATION
+============================================================ -->
+<div class="pagination container">
+
+    <a href="#" class="page-btn active">1</a>
+    <a href="#" class="page-btn">2</a>
+    <a href="#" class="page-btn">3</a>
+    <a href="#" class="page-btn"><i class="fas fa-angle-right"></i></a>
+
+</div>
+
+
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+
+    <div class="footer-top container">
+
+        <div class="footer-col">
+            <h4>SPORTX</h4>
+            <p>Premium sportswear, footwear and performance training gear.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Sports</a>
+            <a href="products.html">Collections</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Account</h4>
+            <a href="profile.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPORTX. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+
+
+<!-- ============================================================
+     CART DRAWER
+============================================================ -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <div class="cart-close"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="cart-list">
+        <!-- JS Cart -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-box">
+            <span>Total:</span>
+            <strong class="cart-total">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+            <input id="searchInputOverlay" type="text" placeholder="Search products...">
+            <div id="searchClose" class="search-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="searchSuggest" class="search-suggest">
+            <!-- JS suggestions -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- SCRIPTS -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/slider.js"></script>
+
+</body>
+</html>

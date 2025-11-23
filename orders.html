@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTX – My Orders</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+    <div class="header-inner container">
+        <a href="index.html" class="logo">SPORTX</a>
+
+        <nav class="main-nav">
+            <div class="nav-item" data-menu="men">MEN</div>
+            <div class="nav-item" data-menu="women">WOMEN</div>
+            <div class="nav-item" data-menu="kids">KIDS</div>
+            <div class="nav-item" data-menu="sports">SPORTS</div>
+            <div class="nav-item" data-menu="collections">COLLECTIONS</div>
+        </nav>
+
+        <div class="nav-icons">
+            <div id="searchBtn" class="icon"><i class="fas fa-search"></i></div>
+            <a href="wishlist.html" class="icon"><i class="far fa-heart"></i></a>
+            <a href="profile.html" class="icon"><i class="far fa-user"></i></a>
+
+            <div class="icon cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <div id="burger" class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="megaMenu" class="mega-menu"></div>
+</header>
+
+
+
+<!-- ============================================================
+     PAGE TITLE
+============================================================ -->
+<section class="page-title container">
+    <h1>My Orders</h1>
+    <p>Track your SPORTX orders, delivery status and history.</p>
+</section>
+
+
+
+<!-- ============================================================
+     FILTER BAR
+============================================================ -->
+<section class="orders-filter container">
+
+    <div class="orders-filter-left">
+        <button class="chip active" data-status="all">All</button>
+        <button class="chip" data-status="processing">Processing</button>
+        <button class="chip" data-status="shipped">Shipped</button>
+        <button class="chip" data-status="delivered">Delivered</button>
+        <button class="chip" data-status="cancelled">Cancelled</button>
+    </div>
+
+    <div class="orders-filter-right">
+        <select id="orderSort" class="sort-select">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+            <option value="high">Total high → low</option>
+            <option value="low">Total low → high</option>
+        </select>
+    </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     ORDERS LIST
+============================================================ -->
+<section class="orders-page container">
+
+    <div id="ordersList" class="orders-list">
+
+        <!-- Order 1 -->
+        <article class="order-card" data-status="delivered" data-total="69900" data-date="2025-01-14">
+
+            <div class="order-header">
+                <div>
+                    <h2>Order #30511</h2>
+                    <span class="order-date">14 Jan 2025</span>
+                </div>
+                <span class="order-status delivered">Delivered</span>
+            </div>
+
+            <div class="order-body">
+                <div class="order-items">
+                    <div class="order-item-mini">
+                        <img src="assets/img/products/p1.jpg" alt="Product">
+                        <div>
+                            <p>AirFlow Running Shoes</p>
+                            <span>Size 40 · Black</span>
+                        </div>
+                    </div>
+                    <div class="order-item-mini">
+                        <img src="assets/img/products/p3.jpg" alt="Product">
+                        <div>
+                            <p>PowerFit Training Shirt</p>
+                            <span>Size M · White</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-meta">
+                    <p><strong>Total:</strong> 69,900 ₸</p>
+                    <p><strong>Payment:</strong> Bank Card</p>
+                    <p><strong>Delivery:</strong> Free · Standard</p>
+                </div>
+            </div>
+
+            <div class="order-footer">
+                <button class="btn small-btn">View details</button>
+                <button class="btn small-btn ghost">Re-order</button>
+            </div>
+
+        </article>
+
+
+
+        <!-- Order 2 -->
+        <article class="order-card" data-status="shipped" data-total="49900" data-date="2024-12-25">
+
+            <div class="order-header">
+                <div>
+                    <h2>Order #30288</h2>
+                    <span class="order-date">25 Dec 2024</span>
+                </div>
+                <span class="order-status shipped">Shipped</span>
+            </div>
+
+            <div class="order-body">
+                <div class="order-items">
+                    <div class="order-item-mini">
+                        <img src="assets/img/products/p2.jpg" alt="Product">
+                        <div>
+                            <p>UrbanFlex Hoodie</p>
+                            <span>Size L · Black</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-meta">
+                    <p><strong>Total:</strong> 49,900 ₸</p>
+                    <p><strong>Payment:</strong> Cash on Delivery</p>
+                    <p><strong>Delivery:</strong> Express</p>
+                </div>
+            </div>
+
+            <div class="order-footer">
+                <button class="btn small-btn">Track package</button>
+                <button class="btn small-btn ghost">Support</button>
+            </div>
+
+        </article>
+
+
+
+        <!-- Order 3 -->
+        <article class="order-card" data-status="processing" data-total="35900" data-date="2024-12-05">
+
+            <div class="order-header">
+                <div>
+                    <h2>Order #30177</h2>
+                    <span class="order-date">5 Dec 2024</span>
+                </div>
+                <span class="order-status processing">Processing</span>
+            </div>
+
+            <div class="order-body">
+                <div class="order-items">
+                    <div class="order-item-mini">
+                        <img src="assets/img/products/p4.jpg" alt="Product">
+                        <div>
+                            <p>ProGrip Sport Bag</p>
+                            <span>One size · Black</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-meta">
+                    <p><strong>Total:</strong> 35,900 ₸</p>
+                    <p><strong>Payment:</strong> Bank Card</p>
+                    <p><strong>Delivery:</strong> Standard</p>
+                </div>
+            </div>
+
+            <div class="order-footer">
+                <button class="btn small-btn ghost">Cancel order</button>
+            </div>
+
+        </article>
+
+
+
+        <!-- Order 4 -->
+        <article class="order-card" data-status="cancelled" data-total="28900" data-date="2024-11-18">
+
+            <div class="order-header">
+                <div>
+                    <h2>Order #29944</h2>
+                    <span class="order-date">18 Nov 2024</span>
+                </div>
+                <span class="order-status cancelled">Cancelled</span>
+            </div>
+
+            <div class="order-body">
+                <div class="order-items">
+                    <div class="order-item-mini">
+                        <img src="assets/img/products/p4.jpg" alt="Product">
+                        <div>
+                            <p>ProGrip Sport Bag</p>
+                            <span>One size · Blue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-meta">
+                    <p><strong>Total:</strong> 28,900 ₸</p>
+                    <p><strong>Payment:</strong> Bank Card</p>
+                    <p><strong>Reason:</strong> Cancelled by user</p>
+                </div>
+            </div>
+
+            <div class="order-footer">
+                <button class="btn small-btn">Re-order</button>
+            </div>
+
+        </article>
+
+    </div>
+
+    <!-- EMPTY STATE (INITIALLY HIDDEN, can be used if no orders) -->
+    <div id="ordersEmpty" class="orders-empty" style="display:none;">
+        <h2>You have no orders yet</h2>
+        <p>Start exploring our collection and place your first SPORTX order.</p>
+        <a href="products.html" class="btn shop-btn">Shop now</a>
+    </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+
+    <div class="footer-top container">
+
+        <div class="footer-col">
+            <h4>SPORTX</h4>
+            <p>Premium sportswear, footwear and performance training gear.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">Men</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Kids</a>
+            <a href="products.html">Sports</a>
+            <a href="products.html">Collections</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Account</h4>
+            <a href="profile.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPORTX. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+
+<!-- ============================================================
+     CART DRAWER (GLOBAL)
+============================================================ -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <div class="cart-close"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="cart-list">
+        <!-- JS mini cart items -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-box">
+            <span>Total:</span>
+            <strong class="cart-total">0 ₸</strong>
+        </div>
+
+        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+            <input id="searchInputOverlay" type="text" placeholder="Search products...">
+            <div id="searchClose" class="search-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="searchSuggest" class="search-suggest">
+            <!-- JS suggestions -->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/slider.js"></script>
+
+<script>
+    // ==================================
+    // ORDER FILTER BY STATUS
+    // ==================================
+    const statusChips = document.querySelectorAll(".orders-filter .chip");
+    const orderCards = document.querySelectorAll(".order-card");
+
+    statusChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+
+            statusChips.forEach(c => c.classList.remove("active"));
+            chip.classList.add("active");
+
+            const status = chip.dataset.status;
+
+            let visibleCount = 0;
+
+            orderCards.forEach(card => {
+                const cardStatus = card.dataset.status;
+
+                if (status === "all" || status === cardStatus) {
+                    card.style.display = "block";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            const emptyBlock = document.getElementById("ordersEmpty");
+            if (visibleCount === 0) {
+                emptyBlock.style.display = "block";
+            } else {
+                emptyBlock.style.display = "none";
+            }
+        });
+    });
+
+
+    // ==================================
+    // ORDER SORTING
+    // ==================================
+    const orderSort = document.getElementById("orderSort");
+    if (orderSort) {
+        orderSort.addEventListener("change", () => {
+
+            const value = orderSort.value;
+            const list = document.getElementById("ordersList");
+            let items = Array.from(orderCards);
+
+            if (value === "new") {
+                items.sort((a, b) => b.dataset.date.localeCompare(a.dataset.date));
+            }
+            if (value === "old") {
+                items.sort((a, b) => a.dataset.date.localeCompare(b.dataset.date));
+            }
+            if (value === "high") {
+                items.sort((a, b) => b.dataset.total - a.dataset.total);
+            }
+            if (value === "low") {
+                items.sort((a, b) => a.dataset.total - b.dataset.total);
+            }
+
+            items.forEach(i => list.appendChild(i));
+        });
+    }
+</script>
+
+</body>
+</html>
